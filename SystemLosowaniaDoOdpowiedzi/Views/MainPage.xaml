@@ -1,0 +1,26 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SystemLosowaniaDoOdpowiedzi.MainPage">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="System Losowania Osoby do Odpowiedzi" FontSize="24" HorizontalOptions="CenterAndExpand" Margin="0,10,0,20" />
+
+            <Entry x:Name="nazwaKlasyEntry" Placeholder="Nazwa klasy" Margin="0,0,0,10" />
+
+            <Button Text="Dodaj klasę" Clicked="DodajKlase_Clicked" Margin="0,0,0,10" />
+            <Button Text="Usuń klasę" Clicked="UsunKlase_Clicked" Margin="0,0,0,10" />
+            <Button Text="Wybierz klasę" Clicked="WybierzKlase_Clicked" Margin="0,0,0,10" />
+
+            <StackLayout Orientation="Horizontal" Margin="0,0,0,10">
+                <Entry x:Name="imieEntry" Placeholder="Imie ucznia:"/>
+                <Button Text="Dodaj ucznia" Clicked="DodajUcznia_Clicked" />
+                <Button Text="Usuń ucznia" Clicked="UsunUcznia_Clicked" />
+                <Button Text="Wylosuj osobę" Clicked="WylosujOsobe_Clicked" />
+            </StackLayout>
+
+            <Label x:Name="wybranaKlasaLabel" FontSize="18" Margin="0,0,0,10" />
+            <Label x:Name="listaUczniowLabel" FontSize="18" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
